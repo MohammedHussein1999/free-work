@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="index2.css" />
+    <!-- Roboto font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- TW Elements styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contener">
+  <div>
+        <input style="display: none" type="file" id="avatarInput" accept="image/*" />
+        <label for="avatarInput" class="avatarLabel">
+          
+          <div class="avatarImage" id="avatarImage">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </label>
+  </div>
+      <!-- </div> -->
+      <form  onsubmit="container()" id="form-data"  class="contener-form">
+        <div class="name_pas">
+          <label for="">اسمك</label>
+          <input type="text" id="name" />
+          <br />
+          <label for="">الحاله</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="">الجنس</label>
+          <select name="gander" id="gander">
+            <option selected disabled value="" name="gander">اختار النوع</option>
+            <option value="ذكر" name="gander">ذكر</option>
+            <option value="انثي" name="female">انثي</option>
+          </select>
+        </div>
+        <div>
+          <label for=""> الـعــمــر</label>
+          <select name="age" id="age" class="m-5">
+            <option selected disabled vlaue="1" name="age">ما عمرك</option>
+            <option  vlaue="2" name="age">2</option>
+            <option  vlaue="3" name="age">3</option>
+            <option  vlaue="4" name="age">4</option>
+            <option  vlaue="5" name="age">5</option>
+            <option  vlaue="6" name="age">6</option>
+            <option  vlaue="7" name="age">7</option>
+            <option  vlaue="8" name="age">8</option>
+            <option  vlaue="9" name="age">9</option>
+            <option  vlaue="10" name="age">10</option>
+            <option  vlaue="11" name="age">11</option>
+            <option  vlaue="12" name="age">12</option>
+            <option  vlaue="13" name="age">13</option>
+            <option  vlaue="14" name="age">14</option>
+            <option  vlaue="15" name="age">15</option>
+            <option  vlaue="16" name="age">16</option>
+            <option  vlaue="17" name="age">17</option>
+            <option  vlaue="18" name="age">18</option>
+            <option  vlaue="19" name="age">19</option>
+            <option  vlaue="20" name="age">20</option>
+            <option  vlaue="21" name="age">21</option>
+            <option  vlaue="22" name="age">22</option>
+            <option  vlaue="23" name="age">23</option>
+            <option  vlaue="24" name="age">24</option>
+            <option  vlaue="25" name="age">25</option>
+            <option  vlaue="26" name="age">26</option>
+            <option  vlaue="27" name="age">27</option>
+            <option  vlaue="28" name="age">28</option>
+            <option  vlaue="29" name="age">29</option>
+            <option  vlaue="30" name="age">30</option>
+            <option  vlaue="31" name="age">31</option>
+            <option  vlaue="32" name="age">32</option>
+            <option  vlaue="33" name="age">33</option>
+            <option  vlaue="34" name="age">34</option>
+            <option  vlaue="35" name="age">35</option>
+            <option  vlaue="36" name="age">36</option>
+            <option  vlaue="37" name="age">37</option>
+            <option  vlaue="38" name="age">38</option>
+            <option  vlaue="39" name="age">39</option>
+            <option  vlaue="40" name="age">40</option>
+            <option  vlaue="41" name="age">41</option>
+            <option  vlaue="42" name="age">42</option>
+            <option  vlaue="43" name="age">43</option>
+            <option  vlaue="44" name="age">44</option>
+            <option  vlaue="45" name="age">45</option>
+            <option  vlaue="46" name="age">46</option>
+            <option  vlaue="47" name="age">47</option>
+            <option  vlaue="48" name="age">48</option>
+            <option  vlaue="49" name="age">49</option>
+            <option  vlaue="50" name="age">50</option>
+          </select>
+        </div>
+        <div class="option">
+          <label for="">الخاص </label>
+          <select name="massage" id="massage">
+            <option value="السماح">السماح</option>
+            <option value="عدم السماح">عدم السماح</option>
+          </select>
+          <label for="">التعليقات </label>
+          <select name="comment" id="comment">
+            <option value="السماح">السماح</option>
+            <option value="عدم السماح">عدم السماح</option>
+          </select>
+          <label for="">تلقي الاشعارات </label>
+          <select name="alert" id="alert">
+            <option value="السماح">السماح</option>
+            <option value="عدم السماح">عدم السماح</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <input
+            type="submit"
+            style="
+              margin-top: 3px;
+              border: solid 1px black;
+              background-color: deepskyblue;
+              border-radius: 20px;
+            "
+            value="حفظ"
+          />
+          <a
+            href="#!"
+            class="text-info text-left transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
+          >
+            سياسة الخصوصية
+          </a>
+          <a
+            href="#!"
+            class="text-danger text-center transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
+          >
+            تسجيل الدخول اذا كان لديك حساب
+          </a>
+        </div>
+        <!-- <input type="submit" style=" border: solid 1px black; background-color:deepskyblue;  " value="مسجل من قبل" /> -->
+      </form>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index2.js "></script>
+
+  </body>
+</html>
